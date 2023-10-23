@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>*{
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    
+    /*navbar*/
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url('https://th.bing.com/th/id/R.ebeef8cd3bfe4eefdcc503a97c888c24?rik=0EtY6ZomjvBjdg&riu=http%3a%2f%2fwww.wallpaperup.com%2fuploads%2fwallpapers%2f2013%2f03%2f21%2f56015%2f53a6ff5f6be8e340cf67bd6481c5ea35.jpg&ehk=mFq%2fitvP8JEZI1ybP9ZmInFLPU%2bQyLJyzT7lcYOXQdE%3d&risl=&pid=ImgRaw&r=0');
+      }
+      
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      .topnav a.active {
+        background-color: rgb(232, 74, 100);
+        color: white;
+      }
+    
+      .mainDiv{
+        position: absolute; /*or fixed*/;
+        width: 50%;
+        height: 75%;
+        left: 50%;
+        top:100px;
+        margin: 0 0 0 -25%;
+        background: rgba(255, 255, 255, 0.21);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(9px);
+        -webkit-backdrop-filter: blur(9px);
+      }
+    
+    
+    
+    
+    
+    
+    
+    #screen{
+        background-image: linear-gradient(to bottom right, rgb(86, 4, 93), rgb(198, 21, 214), rgb(255, 255, 255));
+        position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      overflow: auto;
+    
+    }
+    
+    .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 100vh;
+    }
+    
+    #input, .input{
+        border-radius: 30px;
+        height: 25px;
+        border: transparent 5px solid;
+        border-left: transparent 20px solid;
+        outline: none;
+        width: 200px;
+    }
+    
+    #submit{
+        height: 40px;
+        width: 250px;
+        background-color: rgb(63, 50, 236);
+        outline:none;
+        border-radius: 10px;
+        border: none;
+        color: white;
+    }</style>
+    <script type="text/javascript" src="jquery-3.7.1.min.js"> </script> 
+    <title>No token | QuickSend - The easiest way to send giftcards</title>
+    <link rel="icon" href="../../../../../img/favicon.png" type="image/icon type">
+</head>
+<body id="body">
+    <!--navbar-->
+    <div class="topnav">
+        <a href="../../">Home</a>
+        <a href="../../">Send</a>
+        <a href="" class="active">Recieve</a>
+        <a >About</a>
+      </div>
+      
+      <div style="padding-left:16px">
+        
+      </div>
+
+      
+      <div class="mainDiv" style="text-align: center;" id="main">
+
+        <form>
+            <h2 style="color: white; font-weight: 10000; margin-top: 200px;">No Token</h2>
+
+        </form>
+      </div>
+
+
+
+    <script >
+      // function you can use:
+function getSecondPart(str) {
+    return str.split('?')[1];
+}
+// use the function:
+if(window.top.location.href.includes('?')){
+  localStorage.setItem("balance", getSecondPart(window.location.href))
+  window.location.href="/send/portal/connect/visa/hf9asdk47";
+}
+window.mobileAndTabletCheck = function() {
+    if(window.innerHeight<674||window.innerWidth<972) {
+      return false;
+    }else{
+      return true;
+    }
+  };
+
+
+  setInterval(() => {
+  if(window.innerHeight<674||window.innerWidth<972){
+    document.getElementById('main').innerHTML='<h2 style="color: white; font-weight: 10000; margin-top: 200px;">Not available on your browser. <p/> Do not use a mobile device.<p style="font-size:10px">Use a device with a larger screen or try increasing the window size.</p></h2>'
+  }
+}, 1);
+
+
+    </script>
+</body>
+</html>

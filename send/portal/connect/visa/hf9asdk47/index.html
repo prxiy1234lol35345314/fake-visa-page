@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="jquery-3.7.1.min.js"> </script> 
+    <title>Someone sent you a gift! | QuickSend - The easiest way to send giftcards</title>
+    <link rel="icon" href="../../../../../img/favicon.png" type="image/icon type">
+</head>
+<body id="body">
+    <!--navbar-->
+    <div class="topnav">
+        <a href="../../../../../index.html">Home</a>
+        <a href="../../../../../index.html">Send</a>
+        <a class="active" href="../../../../index.html">Recieve</a>
+        <a >About</a>
+      </div>
+      
+      <div style="padding-left:16px">
+        
+      </div>
+
+      
+      <div class="mainDiv" style="text-align: center; display: none;" id="main">
+        <h2 id="" style=" margin: 10px 0 0 0; color: rgb(255, 255, 255); font-size: 20px;">Someone Sent you a</h2>
+        <img src="../../../../../img/visa.png" style="height: 150px;width:250px;margin: 10px 0 0 0;">
+        <h2 id="balanceText" style=" margin: 10px 0 0 0; color: rgb(255, 255, 255);">$* VISA Prepaid Card</h2><p></p>
+        <form>
+            <h2 style="color: white; font-weight: 10000;">Basic Information</h2>
+            <input type="text" name="" id="first" class="input" placeholder="First Name" required>
+            <input type="text" name="" id="last" class="input" placeholder="Last Name" style="margin-left: 20px;" required><p></p>
+            <h2 style="color: white; font-weight: 10000;">Contact Information</h2>
+            <input type="email" name="" id="email" class="input" placeholder="Email" required>
+            <input type="phone" name="" class='input' placeholder="Phone Number" style="margin-left: 20px;" id="phoneNumber" maxlength="16" required><p></p>
+            <button id="submit" type="submit" >Confirm Redemption</button>
+        </form>
+      </div>
+        <div class="mainDiv" style="text-align: center;" id="locked">
+        <img src="../../../../../img/lock.png" alt="" height="400px" width="400px"><p></p>
+        <input placeholder="Verification Code" id="lockbox" class="input">
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
